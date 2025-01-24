@@ -1,8 +1,11 @@
 const mongoose =  require('mongoose');
 const express  =  require('express');
-let dbUrl  =  'mongodb://localhost:27017/todo'
 let cors =  require('cors')
+require('dotenv').config()
 
+
+
+let dbUrl  =  process.env.dbUrl
 mongoose.connect(dbUrl)
 .then(()=>{
   console.log('connected.....');

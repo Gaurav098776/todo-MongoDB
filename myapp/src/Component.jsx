@@ -92,7 +92,7 @@ const Component = () => {
   })
   function update(_id,taks,status,due_date,comp_date){
     settasks({
-      ...tasks,
+      ...tasks,   //pre fill data aa jayega
       _id:_id,
       task:taks,
       status:status,
